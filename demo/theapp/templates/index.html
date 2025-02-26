@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load svgicon %}
+{% block content %}
+  <div id="home">
+    <h1>Welcome to the Demo project {% icon "handwave" %}</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt {% icon "star" %} ut labore et dolore magna aliqua.
+    </p>
+    <h2>H2 Heading {% icon "star" %}</h2>
+    <h3>H3 Heading {% icon "star" %}</h3>
+    <h4>H4 Heading {% icon "star" %}</h4>
+    <h5>H5 Heading {% icon "star" %}</h5>
+    <h6>H6 Heading {% icon "star" %}</h6>
+    <hr>
+    <small>small text {% icon "star" %}</small>
+    <hr>
+    <a href="#top">Its a link {% icon "star" %}</a>
+    <hr>
+    <button>Inside button {% icon "star" %}</button>
+    <hr>
+    With custom size {% icon "star" size="30px" %}
+    <hr>
+    With custom class {% icon "star" class="veryown-icon special-one" %}
+    <hr>
+    With custom style {% icon "star" style="color:orange" %}
+    <hr>
+    With custom style and size {% icon "star" size="30px" style="color:orange" %}
+    <hr>
+    With custom aria-label {% icon "star" label="Rating" %}
+    <hr>
+    With custom attributes {% icon "star" data_ajaxpath="/api" %}
+    <hr>
+    From icons dict {% icon "square" %}
+  </div>
+{% endblock content %}
