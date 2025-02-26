@@ -72,7 +72,25 @@ yourapp/static/svgicons/menu.svg
 </html>
 ```
 
-For more examples like changing size or setting `aria-label`, follow the 
+Rendered output:
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The App</title>
+    <style>.svgicon{width:1em;height:1em;fill:currentColor;vertical-align:middle;}</style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none;"><symbol id="icon-menu" viewbox="0 0 24 24"><path d="M3,3V21H21V3" /></symbol></svg>
+    <main>
+      <p>Click on the <svg class="svgicon" aria-hidden="true"><use href="#icon-menu"></use></svg> button to open the menu.</p>
+      <button><svg class="svgicon" aria-hidden="true"><use href="#icon-menu"></use></svg></button>
+    </main>
+  </body>
+</html>
+```
+
+For more examples like changing size or using `aria-label`, follow the 
 [demo template](demo/theapp/templates/index.html).
 
 ## Settings
